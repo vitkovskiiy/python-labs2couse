@@ -9,5 +9,8 @@ else:
         data = infile.readline().split()
         for item in data: 
             total+= int(item)
+
+with open('avarage.txt','w',encoding='utf-8') as newFile :
+    newFile.write(str(total)/len(data))
             
-print(f"Avarage number from readed file: {total/len(data)}")
+print(f"Avarage number from readed file: {total/len(data)}");
